@@ -86,6 +86,20 @@
       }
     }
   },
+  "findEvents": {
+    "resource": "https://api.meetup.com/find/events",
+    "method": "get",
+    "test": {
+      "params": {
+        "lon": "-58.381592",
+        "lat": "-34.603722"
+      },
+      "return": {
+        "type": "object",
+        "keys": ["results", "meta"]
+      }
+    }
+  },
   "getEvents": {
     "resource": "https://api.meetup.com/2/events",
     "method": "get",
